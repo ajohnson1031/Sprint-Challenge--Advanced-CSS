@@ -190,6 +190,12 @@ section.navigation nav a {
   color: black;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  section.navigation nav {
+    width: 85%;
+    min-width: 255px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -253,6 +259,7 @@ footer {
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .home .walk .walk-text .btn:hover {
   color: #23293b;
@@ -275,6 +282,9 @@ footer {
   border-radius: 5px;
 }
 @media (max-width: 500px) {
+  .home {
+    min-width: 320px;
+  }
   .home .space-images img {
     width: 100%;
   }
