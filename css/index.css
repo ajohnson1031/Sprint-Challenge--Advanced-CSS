@@ -1,3 +1,11 @@
+.img-mixin {
+  width: 100%;
+  height: auto;
+}
+.flex-centered {
+  display: flex;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,9 +181,8 @@ section.navigation h1 {
 }
 section.navigation nav {
   display: flex;
-  max-width: 375px;
-  width: 30%;
   justify-content: space-between;
+  width: 375px;
   padding-bottom: 15px;
 }
 section.navigation nav a {
