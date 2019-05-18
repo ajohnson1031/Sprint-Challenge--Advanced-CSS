@@ -77,13 +77,40 @@
   }
 
   @media @phone {
-    //Broke max 4 level deep nesting spec here, but the rule is concise so it shouldn't be too difficult to understand.
+    //Broke max 4 level deep nesting spec here, but the rules are concise.
     .space-images {
       img {
         width: 100%;
 
         &:not(:first-child) {
           display: none;
+        }
+      }
+    }
+
+    .walk {
+      flex-direction: column-reverse;
+      margin-top: 25px;
+      padding: 20px;
+
+      .walk-text,
+      .walk-img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .walk-img {
+        padding-bottom: 25px;
+      }
+
+      .walk-text {
+        .btn {
+          width: 100%;
+          padding: 25px 0;
+
+          &:hover {
+            padding: 23px 0;
+          }
         }
       }
     }

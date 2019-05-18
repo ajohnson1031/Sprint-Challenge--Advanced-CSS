@@ -281,4 +281,24 @@ footer {
   .home .space-images img:not(:first-child) {
     display: none;
   }
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 25px;
+    padding: 20px;
+  }
+  .home .walk .walk-text,
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+  .home .walk .walk-img {
+    padding-bottom: 25px;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .home .walk .walk-text .btn:hover {
+    padding: 23px 0;
+  }
 }
