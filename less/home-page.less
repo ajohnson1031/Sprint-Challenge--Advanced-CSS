@@ -75,4 +75,17 @@
     .img-mixin();
     border-radius: 5px;
   }
+
+  @media @phone {
+    //Broke max 4 level deep nesting spec here, but the rule is concise so it shouldn't be too difficult to understand.
+    .space-images {
+      img {
+        width: 100%;
+
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
 } // home
