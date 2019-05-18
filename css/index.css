@@ -244,3 +244,8 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home img.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
