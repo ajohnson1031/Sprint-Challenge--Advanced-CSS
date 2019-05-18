@@ -1,0 +1,84 @@
+.signup {
+  .intro {
+    text-align: center;
+    h2 {
+      padding: 25px 0 15px;
+    }
+
+    p {
+      padding: 0 15px;
+    }
+  }
+
+  img.hero-image {
+    .img-mixin();
+    border-radius: 5px;
+  }
+
+  .walk {
+    margin-top: 30px;
+    border-top: 1px solid @main-border-color;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: center;
+
+    .walk-form {
+      width: 80%;
+      .flex-centered;
+      flex-wrap: wrap;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 26px;
+      }
+
+      .btn {
+        .btn-mixin(100%, @ebony-clay, 2rem, bold, 10px 0, @porcelain);
+      }
+    }
+
+    .walk-img {
+      width: 46%;
+      margin-left: 4%;
+
+      img {
+        .img-mixin();
+        border-radius: 10px;
+      }
+    }
+
+    input {
+      width: 48%;
+      padding: 8px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: @river-bend;
+      border: 1px solid @ebony-clay;
+      border-radius: 2px;
+    }
+
+    #email {
+      width: 100%;
+    }
+  }
+
+  // Custom Added Code //
+  div.hero-image {
+    .img-mixin();
+    border-radius: 5px;
+  }
+
+  @media @phone {
+    min-width: 320px;
+
+    .walk {
+      padding: 30px 20px;
+      .walk-form {
+        width: 100%;
+      }
+    }
+  }
+}

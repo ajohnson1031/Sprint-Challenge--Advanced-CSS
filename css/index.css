@@ -259,7 +259,6 @@ footer {
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
-  transition-duration: 0.2s;
 }
 .home .walk .walk-text .btn:hover {
   color: #23293b;
@@ -310,5 +309,93 @@ footer {
   }
   .home .walk .walk-text .btn:hover {
     padding: 23px 0;
+  }
+}
+.signup .intro {
+  text-align: center;
+}
+.signup .intro h2 {
+  padding: 25px 0 15px;
+}
+.signup .intro p {
+  padding: 0 15px;
+}
+.signup img.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.signup .walk {
+  margin-top: 30px;
+  border-top: 1px solid #dee2e6;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: center;
+}
+.signup .walk .walk-form {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signup .walk .walk-form h3 {
+  margin-bottom: 10px;
+}
+.signup .walk .walk-form p {
+  margin-bottom: 26px;
+}
+.signup .walk .walk-form .btn {
+  width: 100%;
+  background-color: #23293b;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  color: #f6f7f8;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.signup .walk .walk-form .btn:hover {
+  color: #23293b;
+  background-color: #f6f7f8;
+  border: 2px solid #23293b;
+  padding: 8px 0;
+}
+.signup .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.signup .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.signup .walk input {
+  width: 48%;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #454a59;
+  border: 1px solid #23293b;
+  border-radius: 2px;
+}
+.signup .walk #email {
+  width: 100%;
+}
+.signup div.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .signup {
+    min-width: 320px;
+  }
+  .signup .walk {
+    padding: 30px 20px;
+  }
+  .signup .walk .walk-form {
+    width: 100%;
   }
 }
