@@ -1,1 +1,31 @@
 // Mixins Here
+
+.img-mixin {
+  width: 100%;
+  height: auto;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-mixin(@w, @bg, @fs, @fw, @pad, @color) {
+  width: @w;
+  background-color: @bg;
+  font-size: @fs;
+  font-weight: @fw;
+  padding: @pad;
+  color: @color;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    color: @bg;
+    background-color: @color;
+    border: 2px solid @bg;
+    padding: 8px 0;
+  }
+}

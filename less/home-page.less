@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,18 +55,66 @@
       }
 
       .btn {
+        .btn-mixin(100px, @ebony-clay, 2rem, bold, 10px 0, @porcelain);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
-        width: 100%;
-        height: auto;
+        .img-mixin();
         border-radius: 10px;
       }
     }
   }
-}// home
+
+  // Custom Added Code //
+  img.hero-image {
+    .img-mixin();
+    border-radius: 5px;
+  }
+
+  @media @phone {
+    //Broke max 4 level deep nesting spec here, but the rules are concise.
+    min-width: 320px;
+
+    .space-images {
+      img {
+        width: 100%;
+
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+
+    .walk {
+      flex-direction: column-reverse;
+      margin-top: 25px;
+      padding: 20px;
+
+      .walk-text,
+      .walk-img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .walk-img {
+        padding-bottom: 25px;
+      }
+
+      .walk-text {
+        .btn {
+          width: 100%;
+          padding: 25px 0;
+
+          &:hover {
+            padding: 23px 0;
+          }
+        }
+      }
+    }
+  }
+} // home
